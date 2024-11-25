@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registros Médicos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h2>¡<span id="username">Usuario</span>! Tus registros son:</h2>
+  <table>
+    <thead>
+    <tr>
+      <th>FECHA Y HORA:</th>
+      <th>INGRESAR</th>
+    </tr>
+    </thead>
+    <tbody id="recordsTable">
+    <tr>
+      <td>24/11/2024 8:04hrs</td>
+      <td><button class="ingresar-button" data-index="0">INGRESAR</button></td>
+    </tr>
+    <tr>
+      <td>25/11/2024 10:15hrs</td>
+      <td><button class="ingresar-button" data-index="1">INGRESAR</button></td>
+    </tr>
+    <tr>
+      <td>26/11/2024 14:30hrs</td>
+      <td><button class="ingresar-button" data-index="2">INGRESAR</button></td>
+    </tr>
+    </tbody>
+  </table>
+
+  <!-- Botón para regresar -->
+  <button id="backButton">Volver</button>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Supongamos que el nombre de usuario está almacenado en localStorage con la clave "username"
+    const username = localStorage.getItem("username");
+
+    if (username) {
+      document.getElementById("username").textContent = username;
+    }
+
+    // Datos ficticios de métricas de salud
+    const medicalRecords = [
+      {
+        bpmReposo: 70,
+        bpmActividad: 120,
+        spo2: 98,
+        temperatura: 36.5,
+        peso: 70,
+        altura: 180,
+        vam: 45
+      },
+      {
+        bpmReposo: 72,
+        bpmActividad: 115,
+        spo2: 97,
+        temperatura: 36.7,
+        peso: 70.1,
+        altura: 180,
+        vam: 50
+      },
+      {
+        bpmReposo: 68,
+        bpmActividad: 130,
+        spo2: 99,
+        temperatura: 36.8,
+        peso: 70,
+        altura: 180,
+        vam: 48
+      }
+    ];
+
+    // Agregar evento de clic a los botones "INGRESAR"
+    const buttons = document.querySelectorAll(".ingresar-button");
+    buttons.forEach((button) => {
+      button.addEventListener("click", function() {
+        // Obtener el índice del botón (corresponde al registro)
+        const index = button.dataset.index;
+
+        // Almacenar los datos del registro seleccionado en localStorage
+        localStorage.setItem("selectedMetrics", JSON.stringify(medicalRecords[index]));
+
+        // Redirigir a la página de métricas
+        window.location.href = "metrics.html";
+      });
+    });
+
+    // Agregar evento de clic al botón "Regresar"
+    const backButton = document.getElementById("backButton");
+    backButton.addEventListener("click", function() {
+      // Redirigir a la página de bienvenida
+      window.location.href = "welcome.html";
+    });
+  });
+</script>
+</body>
+</html>

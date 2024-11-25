@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="loadWelcomeMessage()">
+<div class="container welcome-page">
+    <div class="header">
+        <h2 id="welcomeMessage">¡Bienvenido, Usuario!</h2>
+        <button class="profile-button" onclick="navigateTo('profile.html')">
+            <img src="imagenes/usuario.png" alt="Perfil" class="profile-icon">
+            Mi perfil
+        </button>
+    </div>
+    <div class="cards-container">
+        <div class="card" onclick="navigateTo('medical_records.html')">
+            <img src="imagenes/medical-record-icon.png" alt="Registro Médico" class="card-icon">
+            <h3>Registro Médico</h3>
+        </div>
+        <div class="card" onclick="navigateTo('recommendations.html')">
+            <img src="imagenes/recommendation-icon.png" alt="Recomendaciones" class="card-icon">
+            <h3>Recomendaciones</h3>
+        </div>
+    </div>
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>

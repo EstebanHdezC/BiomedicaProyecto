@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3eac2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.recommendations-page {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.recommendations-page h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.recommendations-container {
+    text-align: left;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.recommendation-item {
+    background-color: #f3b634;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+    background-color: #e0a022;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background-color: #cc9200;
+    transform: translateY(-2px);
+}
+
+.back-button:active {
+    background-color: #b58900;
+    transform: translateY(0);
+}

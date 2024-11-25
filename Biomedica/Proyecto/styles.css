@@ -1,0 +1,398 @@
+/* styles.css */
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+.container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-width: 100%;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form button {
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}
+
+.switch-form {
+    text-align: center;
+    color: #777;
+}
+
+.switch-form a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.switch-form a:hover {
+    text-decoration: underline;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para la página de bienvenida */
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8efd4;
+}
+
+.container.welcome-page {
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px; /* Incrementar el espacio inferior */
+
+}
+
+.header h2 {
+    color: #333;
+    font-size: 2.5em;
+}
+
+.profile-button {
+    background-color: #d5976c;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 80px; /* Añadir margen izquierdo para separar del título */
+}
+
+.profile-button:hover {
+    background-color: #c47d5f;
+}
+
+.profile-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Incrementar el espacio entre tarjetas */
+    margin-top: 20px; /* Añadir espacio superior para separar del saludo */
+}
+
+.card {
+    background-color: #d5976c;
+    border-radius: 20px;
+    width: 220px; /* Aumentar el ancho de las tarjetas */
+    padding: 25px; /* Aumentar el padding interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.4em; /* Aumentar un poco el tamaño del texto */
+    margin-top: 15px;
+}
+
+/* Estilos adicionales para registros médicos */
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f8efd4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead th {
+    background-color: #d5976c;
+    color: #ffffff;
+    padding: 15px;
+    border: 1px solid #d5976c;
+}
+
+tbody td {
+    border: 1px solid #d5976c;
+    padding: 15px;
+    color: #333;
+    font-size: 1em;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8efd4;
+}
+
+ingresar-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+ingresar-button:hover {
+    background-color: #cccccc;
+}
+
+th, td {
+    text-align: center;
+}
+
+/* Estilos para métricas y gráficos */
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8efd4;
+}
+
+.container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 1000px;
+    max-height: 90vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.charts-container {
+    width: 100%;
+    overflow-y: auto;
+    max-height: 60vh;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.charts-container canvas {
+    min-width: 100%;
+    max-width: 100%;
+    height: 300px;
+    object-fit: contain;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes del carrusel */
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.carousel-slide canvas {
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Botones del carrusel */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    opacity: 0.8;
+    z-index: 10; /* Asegura que los botones estén al frente */
+}
+
+.carousel-button:hover {
+    background: #0056b3;
+    opacity: 1;
+}
+
+#prevBtn {
+    left: 350px;
+}
+
+#nextBtn {
+    right: 350px;
+}
+
+/* Estilo general para botones */
+button {
+    background: linear-gradient(90deg, #4CAF50, #43A047); /* Degradado verde */
+    border: none;
+    color: white; /* Texto blanco */
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: all 0.3s ease; /* Transición suave para efectos */
+}
+
+button:hover {
+    background: linear-gradient(90deg, #45a049, #388E3C); /* Degradado verde más oscuro */
+    transform: translateY(-2px); /* Efecto de elevación */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+button:active {
+    background: linear-gradient(90deg, #388E3C, #2E7D32); /* Verde más oscuro */
+    transform: translateY(0); /* Sin elevación */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra restaurada */
+}
+
+/* Botón específico para "Volver" */
+#backButton {
+    background: linear-gradient(90deg, #007bff, #0056b3); /* Degradado azul */
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 25px; /* Más redondeado */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+#backButton:hover {
+    background: linear-gradient(90deg, #0056b3, #004085); /* Azul más oscuro */
+    transform: translateY(-2px); /* Efecto de elevación */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+#backButton:active {
+    background: linear-gradient(90deg, #004085, #003366); /* Azul más profundo */
+    transform: translateY(0); /* Sin elevación */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra restaurada */
+}
+
